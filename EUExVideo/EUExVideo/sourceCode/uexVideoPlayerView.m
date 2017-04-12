@@ -595,10 +595,10 @@ static OSSpinLock lock;
         }];
         [button mas_updateConstraints:^(MASConstraintMaker *make) {
             @strongify(self);
-            make.top.equalTo(self.mas_top).with.offset(5);
-            make.left.equalTo(self.mas_left).with.offset(5);
-            make.height.equalTo(@30);
-            make.width.equalTo(@30);
+            make.top.equalTo(self.mas_top).with.offset(15);
+            make.left.equalTo(self.mas_left).with.offset(15);
+            make.height.equalTo(@40);
+            make.width.equalTo(@40);
         }];
         _closeButton = button;
     }
